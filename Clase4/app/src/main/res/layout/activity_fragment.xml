@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin gravedad"
+        android:textSize="23sp"
+        android:background="#080" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right"
+        android:background="#080"
+        android:textSize="23sp"
+        android:layout_gravity="right" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottom"
+        android:background="#080"
+        android:textSize="23sp"
+        android:layout_gravity="bottom" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottom|right"
+        android:background="#080"
+        android:textSize="23sp"
+        android:layout_gravity="bottom|right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#080"
+        android:text="center_vertical"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center_horizontal"
+        android:background="#080"
+        android:textSize="23sp"
+        android:layout_gravity="center_horizontal" />
+</FrameLayout>
