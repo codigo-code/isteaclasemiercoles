@@ -55,17 +55,18 @@ class HeladoAdapter(private val dataSet: ArrayList<Helado>) :RecyclerView.Adapte
 
             View.OnClickListener {
                 //
-
+                val valorConDescuento = (dataSet[position].precio*0.6)
+                holder.desc.text = valorConDescuento.toString()
                 val builder = AlertDialog.Builder(it.context)
                 builder.setTitle("Desea comprar el "+ dataSet[position].desc+ "?")
-                builder.setMessage("Tiene un 30% descuento con club ISTEA! te queda en: " +(dataSet[position].precio*0.7) + "!!")
+                builder.setMessage("Tiene un 40% descuento con club ISTEA! te queda en: " + valorConDescuento + "!!")
                 builder.setIcon(android.R.drawable.ic_dialog_alert)
 
                 // si presion " OK " o "SI" o lo que nosotros digamos , hara una accion
                 // tengamos en cuenta que las acciones son positivas, neustras o negativas
 
                 builder.setPositiveButton("Comprar"){dialogInterface, i -> Toast.makeText(it.context,dataSet[position].desc + " comprado" , Toast.LENGTH_SHORT).show() }
-                builder.setNegativeButton("No"){dialogInterface, i ->  Toast.makeText(it.context,"el precio "+dataSet[position].precio + ", es demasiado alto",Toast.LENGTH_SHORT).show()}
+                builder.setNegativeButton("No"){dialogInterface, i ->  Toast.makeText(it.context,"el precio "+valorConDescuento + ", es demasiado alto",Toast.LENGTH_SHORT).show()}
                 builder.setNeutralButton("Cancelar"){dialogInterface, i -> Toast.makeText(it.context,"operacion cancelada",Toast.LENGTH_SHORT).show() }
 
                 val alerta:AlertDialog = builder.create()
