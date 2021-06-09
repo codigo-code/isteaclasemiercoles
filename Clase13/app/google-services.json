@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815485059497",
+    "project_id": "kotlinmiercoles",
+    "storage_bucket": "kotlinmiercoles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815485059497:android:5757df4b59b3cb544844b8",
+        "android_client_info": {
+          "package_name": "edu.istea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815485059497-d1tvii07ie591c2v2vgm9raki5b748on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn7KivRLLKF9JsL_v3XbfxL3Akafe7pE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815485059497-d1tvii07ie591c2v2vgm9raki5b748on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
